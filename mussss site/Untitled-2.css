@@ -1,0 +1,158 @@
+/* Estilo do banner responsivo */
+.banner {
+    background: url('https://via.placeholder.com/1200x500?text=Banner+Projeto+Emagrecer') center/cover no-repeat;
+    height: 60vh;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(65, 65, 65);
+    padding: 20px;
+    position: relative;
+  }
+  
+  .banner::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+    z-index: 1;
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+  }
+  
+  .banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .banner h1 span {
+    color: #00ff88;
+  }
+  
+  .banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .banner a {
+    background-color: #00ff88;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ff88;
+    transition: 0.3s;
+  }
+  
+  .banner a:hover {
+    background-color: #00cc6a;
+  }
+  
+  @media (max-width: 768px) {
+    .banner h1 {
+      font-size: 1.8em;
+    }
+  
+    .banner p {
+      font-size: 1em;
+    }
+  
+    .banner a {
+      padding: 12px 20px;
+      font-size: 0.95em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      height: 50vh;
+      padding: 15px;
+    }
+  
+    .banner h1 {
+      font-size: 1.5em;
+    }
+  
+    .banner p {
+      font-size: 0.9em;
+    }
+  
+    .banner a {
+      padding: 10px 18px;
+      font-size: 0.9em;
+    }
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    display: flex;
+    animation: slide 20s infinite; /* Animação automática */
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.carousel-item p {
+    font-size: 18px;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-400%); }
+    100% { transform: translateX(-400%); }
+}

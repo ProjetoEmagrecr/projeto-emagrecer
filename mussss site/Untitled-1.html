@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Emagrecer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ff0000;
+      color: #ffffff;
+    }
+
+    .banner {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .banner-content {
+      padding: 2rem;
+      text-align: center;
+      background-color: #000000;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .ofertas {
+      background-color: hsl(0, 0%, 0%);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .ofertas h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .ofertas p {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    strong {
+      color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="banner">
+      <img src="banner.jpg" alt="Banner Responsivo">
+    </div>
+  </header>
+
+  <section class="banner-content">
+    <h2>🎯 Bem-vindo ao <strong>Projeto Emagrecer</strong> — Sua jornada começa agora!</h2>
+  </section>
+  
+  <section class="ofertas">
+    <h1>🌟 Transforme sua vida!</h1>
+    <p>Aproveite nossas <strong>ofertas imperdíveis</strong> para mudar sua vida!</p>
+  </section>
+  
+
+</body>
+</html>
+
+                
+                </div>
+              </section>
+            
+            <html lang="pt-BR">
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Carrossel de Produtos - Projeto Emagrecer</title>
+              <style>
+                * {
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                }
+            
+                body {
+                  background-color: #000;
+                  color: white;
+                  font-family: Arial, sans-serif;
+                  padding: 20px;
+                }
+            
+                .carousel-container {
+                  width: 100%;
+                  max-width: 600px;
+                  margin: 40px auto;
+                  overflow: hidden;
+                  border-radius: 12px;
+                  box-shadow: 0 0 20px #00ff88;
+                  animation: float 1s ease-in-out infinite;
+                }
+            
+                @keyframes float {
+                  0%, 100% { transform: translateY(0); }
+                  50% { transform: translateY(-10px); }
+                }
+            
+                .carousel-slide {
+                  display: flex;
+                  width: 100%;
+                  animation: slide 10s infinite;
+                }
+            
+                @keyframes slide {
+                  0%   { transform: translateX(0%); }
+                  33%  { transform: translateX(-100%); }
+                  66%  { transform: translateX(-200%); }
+                  100% { transform: translateX(0%); }
+                }
+            
+                .carousel-item {
+                  width: 100%;
+                  flex-shrink: 0;
+                  padding: 25px;
+                  background-color: #111;
+                  text-align: center;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+            
+                .carousel-item img {
+                  width: 100%;
+                  max-width: 320px;
+                  height: auto;
+                  border-radius: 10px;
+                  margin-bottom: 20px;
+                  box-shadow: 0 0 10px #00ff88;
+                }
+            
+                .carousel-item h2 {
+                  font-size: 1.4em;
+                  margin-bottom: 10px;
+                }
+            
+                .carousel-item p {
+                  font-size: 1em;
+                  margin-bottom: 20px;
+                }
+            
+                .carousel-item a {
+                  background-color: #00ff88;
+                  color: #000;
+                  padding: 12px 22px;
+                  font-size: 1em;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  font-weight: bold;
+                  box-shadow: 0 0 15px #00ff88;
+                  transition: 0.3s;
+                }
+            
+                .carousel-item a:hover {
+                  background-color: #00cc6a;
+                }
+            
+                @media (max-width: 768px) {
+                  .carousel-item h2 {
+                    font-size: 1.2em;
+                  }
+            
+                  .carousel-item p {
+                    font-size: 0.95em;
+                  }
+            
+                  .carousel-item a {
+                    font-size: 0.95em;
+                    padding: 10px 18px;
+                  }
+                }
+            
+                @media (max-width: 480px) {
+                  .carousel-item img {
+                    max-width: 90%;
+                  }
+            
+                  .carousel-item h2 {
+                    font-size: 1.1em;
+                  }
+            
+                  .carousel-item p {
+                    font-size: 0.9em;
+                  }
+            
+                  .carousel-item a {
+                    font-size: 0.9em;
+                    padding: 10px 16px;
+                  }
+                }
+              </style>
+            </head>
+            <body>
+            
+              <div class="carousel-container">
+                <div class="carousel-slide">
+            
+                  <!-- Produto 1 -->
+                  <div class="carousel-item">
+                    <img src="produto1.jpg" alt="E-book Dieta">
+                    <h2>🔥 De <s>R$149,00</s> por R$14,99!</h2>
+                    <p>Detox 7 Dias</p>
+                    <a href="https://pay.cakto.com.br/34exfbq_319309" target="_blank">Comprar Agora</a>
+                  </div>
+                  <!-- Produto 2 -->
+                  <div class="carousel-item">
+                    <img src="produto2.jpg" alt="Treino em Casa">
+                    <h2>🔥 De <s>R$99,99</s> por R$29,99!</h2>
+                    <p>RECEITAS FIT PARA SECAR</p>
+                    <a href="https://pay.cakto.com.br/34exfbq_319309" target="_blank">Comprar Agora</a>
+                  </div>
+                  <!-- Produto 3 -->
+                  <div class="carousel-item">
+                    <img src="produto3.jpg" alt="Desafio 21 Dias">
+                    <h2>🔥 De <s>R$149,99</s> por R$10,00!</h2>
+                    <p>Treino em Casa 💪</p>
+                    <a href="https://pay.cakto.com.br/34exfbq_319309" target="_blank">Comprar Agora</a>
+                  </div>
+            
+                </div>
+              </div>
+            
+            </body>
+            </html>
+</html>
+        <div class="products">
+          <!DOCTYPE html>
+          <html lang="pt-BR">
+          <head>
+            <meta charset="UTF-8">
+            <title>Loja - Projeto Emagrecer</title>
+            <style>
+              body {
+                background-color: #000;
+                color: #fff;
+                font-family: Arial, sans-serif;
+                padding: 30px;
+              }
+          
+              .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+              }
+          
+              .produto {
+                background-color: #111;
+                border: 1px solid #333;
+                border-radius: 10px;
+                padding: 20px;
+                width: 250px;
+                text-align: center;
+              }
+          
+              .produto img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 10px;
+              }
+          
+              .produto h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
+          
+              .produto p {
+                font-size: 14px;
+                color: #ccc;
+                margin-bottom: 15px;
+              }
+          
+              .botao-comprar {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #00cc66;
+                color: #fff;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                transition: background-color 0.3s;
+              }
+          
+              .botao-comprar:hover {
+                background-color: #00994d;
+              }
+            </style>
+          </head>
+          <body>
+            <h1 style="text-align:center;">Nossos Produtos</h1>
+            <div class="container">
+              <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja - Projeto Emagrecer</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .produto {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .produto h2 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .produto .preco {
+      font-size: 16px;
+      color: #00cc66;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .produto p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .botao-comprar {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00cc66;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .botao-comprar:hover {
+      background-color: #00994d;
+    }
+  </style>
+</head>
+    
+    <!-- Produto 1 -->
+    <div class="produto">
+      <img src="produto10.jpg" alt="Produto 1">
+      <h2>E-book Dieta Inteligente 🥗</h2>
+      <h2>🔥 De <s>R$ 99,99</s> por R$14,99!</h2>
+      <p>Guia completo para começar sua jornada de emagrecimento.</p>
+      <a href="LINK-CAKTO-1" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="produto">
+      <img src="produto3.jpg" alt="Produto 2">
+      <h2>Treino em Casa</h2>
+      <h2>🔥 De <s>R$149,99</s> por R$10,00!</h2>
+      <p>Programa de treino funcional para perda de peso.</p>
+      <a href="LINK-CAKTO-2" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="produto">
+      <img src="produto4.jpg" alt="Produto 3">
+      <h2>Mentoria Fit</h2>
+      <div class="preco">R$ 100,00</div>
+      <p>Mentoria individual com plano alimentar e metas semanais.</p>
+      <a href="LINK-CAKTO-3" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="produto">
+      <img src="produto5.jpg" alt="Produto 4">
+      <h2>Desafio 30 Dias</h2>
+      <div class="preco">R$ 19,90</div>
+      <p>Desafio diário com foco em perder barriga em casa.</p>
+      <a href="LINK-CAKTO-4" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 5 -->
+    <div class="produto">
+      <img src="produto6.jpg" alt="Produto 5">
+      <h2>Suplemento Detox</h2>
+      <div class="preco">R$ 49,90</div>
+      <p>Produto natural que auxilia na desintoxicação do corpo.</p>
+      <a href="LINK-CAKTO-5" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 6 -->
+    <div class="produto">
+      <img src="produto7.jpg" alt="Produto 6">
+      <h2>Receitas Low Carb</h2>
+      <div class="preco">R$ 24,90</div>
+      <p>Livro digital com receitas rápidas e saudáveis.</p>
+      <a href="LINK-CAKTO-6" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 7 -->
+    <div class="produto">
+      <img src="produto2.jpg" alt="Produto 7">
+      <h2>Plano Fit Express</h2>
+      <h2>🔥 De <s>R$99,99</s> por R$29,99!</h2>
+      <p>Planejamento alimentar e exercícios para 21 dias.</p>
+      <a href="LINK-CAKTO-7" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 8 -->
+    <div class="produto">
+      <img src="produto8.jpg" alt="Produto 8">
+      <h2>Cardápio Saudável</h2>
+      <div class="preco">R$ 27,90</div>
+      <p>Menu semanal com foco em emagrecimento saudável.</p>
+      <a href="LINK-CAKTO-8" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 9 -->
+    <div class="produto">
+      <img src="produto9.jpg" alt="Produto 9">
+      <h2>Curso Emagreça Online</h2>
+      <div class="preco">R$ 79,90</div>
+      <p>Curso completo com aulas em vídeo e acompanhamento.</p>
+      <a href="LINK-CAKTO-9" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+    <!-- Produto 10 -->
+    <div class="produto">
+      <img src="produto1.jpg" alt="Produto 10">
+      <h2>Detox 7 Dias</h2>
+      <h2>🔥 De <s>R$149,00</s> por R$14,99!</h2>
+      <p>Plano detox simples e eficaz para iniciantes.</p>
+      <a href="LINK-CAKTO-10" class="botao-comprar">Comprar Agora</a>
+    </div>
+
+  </div>
+</body>
+</html>
+
+          
+            </div>
+          </body>
+          </html>
+          
+            <!-- Adicione mais produtos -->
+            <!-- Você pode copiar/colar este bloco para mais produtos -->
+        </div>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Depoimentos - Projeto Emagrecer</title>
+    <style>
+        body {
+            background-color: black; /* Fundo preto */
+            color: white; /* Texto branco */
+            font-family: Arial, sans-serif;
+        }
+        .testimonial {
+            border: 1px solid #444;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+        }
+        .image {
+            margin-right: 20px;
+        }
+        .image img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .text {
+            max-width: 600px;
+        }
+        .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Depoimentos - Projeto Emagrecer</h1>
+    <div class="testimonial">
+        <div class="image">
+            <img src="ana.jpg" alt="Foto de Ana">
+        </div>
+        <div class="text">
+            <p>"Com o Projeto Emagrecer, consegui perder 10 kg em 3 meses de forma saudável e sustentável. Foi transformador!"</p>
+            <div class="author">- Ana Pereira</div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="image">
+            <img src="carlos.jpg" alt="Foto de Carlos">
+        </div>
+        <div class="text">
+            <p>"Além de atingir meu objetivo de emagrecimento, aprendi a me alimentar melhor e me sentir mais disposto no dia a dia."</p>
+            <div class="author">- Carlos Silva</div>
+        </div>
+    </div>
+</body>
+</html>
+</section>
+<footer>
+    <p>&copy; 2025 Projeto Emagrecer. Todos os direitos reservados.</p>
+</footer>
